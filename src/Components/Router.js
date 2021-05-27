@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router,Redirect,Route,Switch} from "react-router-dom";
 import Home from "../Routes/Home";
-import Search from "../Routes/Search";
+import Collection from "../Routes/Collection"
 import Maker from "../Routes/Maker";
 import Menubar from "./Menubar";
 import Header from "./Header";
@@ -13,7 +13,7 @@ export default ()=>(
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/maker" component={Maker} />
-        <Route path="/search" component={Search} />
+        <Route path="/collection" component={Collection} />
         <Redirect from="*" to="/" />
       </Switch>
     </>
