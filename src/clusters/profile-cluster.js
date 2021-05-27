@@ -39,30 +39,13 @@ export function ProfileCluster({address}) {
 
   return (
     <div>
-      <h3>Profile: {address}</h3>
       {profile.isCurrentUser && <ProfileForm />}
       <ul>
         <li>
-          <img
-            src={profile.avatar}
-            width="50px"
-            height="50px"
-            alt={profile.name}
-          />
-        </li>
-        <li>
-          <strong>Name: </strong>
+          <strong>My Name: </strong>
           <span>{profile.name}</span>
-          {profile.isCurrentUser && <span> -You</span>}
+          {profile.isCurrentUser && <span> - It's your name</span>}
           {profile.isProcessing && <span>PROCESSING</span>}
-        </li>
-        <li>
-          <strong>Color: </strong>
-          <span>{profile.color}</span>
-        </li>
-        <li>
-          <strong>Info: </strong>
-          <span>{profile.info}</span>
         </li>
       </ul>
     </div>

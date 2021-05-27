@@ -1,13 +1,11 @@
+// File: ./src/hooks/profile.js
 import {atomFamily, useRecoilState} from "recoil"
 import {fetchProfile} from "../flow/fetch-profile.script"
 import {setName as profileSetName} from "../flow/profile-set-name.tx"
 import {useCurrentUser} from "./current-user"
 
 const DEFAULT = {
-  name: "Anon",
-  color: "#232323",
-  info: "...",
-  avatar: "https://avatars.onflow.org/avatar/pew",
+  name: "Set your name"
 }
 const IDLE = "IDLE"
 const PROCESSING = "PROCESSING"
@@ -32,8 +30,6 @@ export function useProfile(address) {
     await fetchProfile(address)
       .then(profile => {
         if (profile == null) return profile
-        if (profile.avatar === "") profile.avatar = DEFAULT.avatar
-        if (profile.info === "") profile.info = DEFAULT.info
         return profile
       })
       .then(setProfile)
