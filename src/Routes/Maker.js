@@ -27,6 +27,7 @@ import useStyles from '../App.styles';
 import { Fragment } from 'react';
 import { exportComponentAsPNG } from "react-component-export-image"
 import ColorPicker from '../Components/ColorPicker.js';
+import {MintCluster} from '../clusters/mint-cluster'
 
 const arr1= Array.from(Array(16), () => new Array(32).fill(0));
 
@@ -297,8 +298,14 @@ const Home = () => {
   });
   }
   
+  const colorArray = arr1.toString();
 
+  const [nftName, setNftName] = useState("initial value")
 
+  function set() {
+    setNftName(document.getElementById("input").value)
+    console.log(nftName)
+  }
 
 
   //store playHeadComponent in a variable for readability
@@ -352,6 +359,16 @@ const Home = () => {
     
     onClick={() =>{ handleClick();}}>Create
       </Button>
+    </div>
+
+    Name of NFT:     
+    <div>
+      <input type="text" id="input"></input>
+      <button onClick={set}>set Name</button>
+    </div>
+
+    <div>
+    <MintCluster name={nftName} array={colorArray} />
     </div>
 
     </div>
