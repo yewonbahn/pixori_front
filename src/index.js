@@ -9,6 +9,7 @@ import {RecoilRoot} from "recoil"
 import {CurrentUserSubscription} from "./hooks/current-user"
 
 import {InitCluster} from "./clusters/init-cluster"
+import {ProfileCluster} from './clusters/profile-cluster'
 import {useCurrentUser} from "./hooks/current-user"
 
 function Init() {
@@ -18,6 +19,12 @@ function Init() {
   )
 }
 
+function Profile() {
+  const cu = useCurrentUser()
+  return (
+    <ProfileCluster address={cu.addr} />
+  )
+}
 
 ReactDOM.render(
   <React.StrictMode>
@@ -25,6 +32,7 @@ ReactDOM.render(
       <AuthCluster />
       <CurrentUserSubscription />
       <Init />
+      <Profile />
       <App />
     </RecoilRoot>
   </React.StrictMode>, document.getElementById('root'));
