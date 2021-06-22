@@ -10,7 +10,7 @@ const Square = (props) => {
 
   const { selectedColor } = props.color;
 
-  const [pixelColor, setPixelColor] = useState("#fff");
+  const [pixelColor, setPixelColor] = useState("#000000");
   const [oldColor, setOldColor] = useState(pixelColor);
   const [canChangeColor, setCanChangeColor] = useState(true);
 

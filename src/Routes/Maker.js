@@ -43,7 +43,7 @@ const Home = () => {
 
   const panelRef = useRef()
 
-  const [selectedColor, setColor] = useState("000000");
+  const [selectedColor, setColor] = useState("#000000");
 
 
 
