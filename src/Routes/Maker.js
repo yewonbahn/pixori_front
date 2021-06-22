@@ -141,7 +141,7 @@ const Home = () => {
     clonedObj[column] = toggle;
     //temporary const for setGrid
     const arrayToPassSetGrid = [];
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 15; i++) {
       if (row === i) {
         arrayToPassSetGrid.push(clonedObj);
       } else {
