@@ -8,8 +8,8 @@ const BeatTracker = (props) => {
   let newCounter = counter;
   const beats = BPM(tempo);
   let [animCount, setAnimCount] = useState(0)
-  const [squares, setSquares] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
-  const [playHeadArray, setPlayHeadArray] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+  const [squares, setSquares] = useState([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]);
+  const [playHeadArray, setPlayHeadArray] = useState([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]);
 
   // const generateSquares = () => {
   // setPlayHeadArray(squares.map((square, i) => ( <td key={square} id={i} className={square > 0 ? "playhead" : "inactive"}></td> )))
@@ -21,7 +21,7 @@ const BeatTracker = (props) => {
 //helper function that gets the previous square (to remove classes)
 const getPreviousSquare = () => {
 if(animCount === 0){
-  return document.getElementById('15')
+  return document.getElementById('31')
 } else {
   return document.getElementById(`${animCount - 1}`)
 }
@@ -55,7 +55,7 @@ const logCounter = () => {
  //resets the state of the playhead
 const resetSquares = () => {
   // setAnimCount(0)
-  setSquares([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+  setSquares([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,]);
     setPlayHeadArray(squares.map((square, i) => ( <td key={square} id={i} className={square > 0 ? "playhead" : "inactive"}></td> )))
 }
 //handling page re-renders
@@ -76,6 +76,23 @@ return isPlaying ?
 : (
   <>
   <td className={isPlaying ? 'hidden' : null}/>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+  <td className="inactive"></td>
+
   <td className="inactive"></td>
   <td className="inactive"></td>
   <td className="inactive"></td>

@@ -138,6 +138,7 @@ const Home = () => {
   //handles any changes user makes to instrument grid and updates values accordingly
   const updateGrid = (row, column, toggle,color) => {
     const clonedObj = { ...grid[row] };
+    console.log(clonedObj)
     clonedObj[column] = toggle;
     //temporary const for setGrid
     const arrayToPassSetGrid = [];
@@ -163,14 +164,18 @@ const Home = () => {
       html5: true,
 
     });
+    console.log(sound)
     sound.play();
   };
 
   //Iterate through the array of collected sounds compiled from our grid in loop()
   const playSounds = (array) => {
-    for (let i = 0; i < array.length; i++) {
+
+    for (let i = 0; i < 31; i++) {
       playSound(array[i]);
+
     }
+
   };
 
   //collate all active sound samples on the current beat into an array from instruments
@@ -251,6 +256,7 @@ const Home = () => {
           <td className="inactive"></td>
           <td className="inactive"></td>
           <td className="inactive"></td>
+
           <td className="inactive"></td>
           <td className="inactive"></td>
           <td className="inactive"></td>
@@ -259,6 +265,7 @@ const Home = () => {
           <td className="inactive"></td>
           <td className="inactive"></td>
           <td className="inactive"></td>
+
           <td className="inactive"></td>
           <td className="inactive"></td>
           <td className="inactive"></td>
@@ -267,7 +274,8 @@ const Home = () => {
           <td className="inactive"></td>
           <td className="inactive"></td>
           <td className="inactive"></td>
-          <td className="inactive"></td>
+
+           <td className="inactive"></td>
           <td className="inactive"></td>
           <td className="inactive"></td>
           <td className="inactive"></td>
