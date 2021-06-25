@@ -1,14 +1,23 @@
 import React from 'react';
 import {TokenCluster} from '../clusters/token-cluster'
+import {ErrorTokenCluster} from '../clusters/error-token-cluster'
 import {useCurrentUser} from '../hooks/current-user'
 
 export default () => {
 
 function Token() {
     const cu = useCurrentUser()
-    return (
-      <TokenCluster address={cu.addr} />
-    )
+
+    if (cu.addr){
+      return (
+        <TokenCluster address={cu.addr} />
+      )
+    }
+    else{
+      return(
+      <ErrorTokenCluster />
+      )
+    }
   }
 
   return (
