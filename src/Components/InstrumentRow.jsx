@@ -10,7 +10,7 @@ const InstrumentRow = (props) => {
 }
   return (
     <tr>
-      <td className="instrument">
+      <td className="instrument" >
         
         {props.instrumentName}
       </td>

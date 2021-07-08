@@ -20,15 +20,15 @@ import Bpm from '../helpers/useBPM';
 
 import Tempo from '../Components/Tempo';
 import { instruments } from '../helpers/instruments';
-import PlayButton from '../Components/PlayButton';
-import StopButton from '../Components/StopButton';
+
 import { Howl } from 'howler';
 import useStyles from '../App.styles';
 import { Fragment } from 'react';
 import { exportComponentAsPNG } from "react-component-export-image"
 import ColorPicker from '../Components/ColorPicker.js';
 import {MintCluster} from '../clusters/mint-cluster'
-
+import playbutton from "../img/btn_play_circle_purple.png"
+import stopbutton from "../img/btn_stop_circle_purple.png"
 const arr1= Array.from(Array(16), () => new Array(32).fill(0));
 
 const Home = () => {
@@ -328,34 +328,46 @@ const Home = () => {
 
  
       </div>
-      <div className="btnGroup">
-        <PlayButton onClick={togglePlay} isPlaying={isPlaying} />
-        <StopButton onClick={togglePlay} isPlaying={isPlaying} />
+      <div className="progress_container_purple">
+     
+        <Button onClick={togglePlay} isPlaying={isPlaying} className="btn_play_circle_purple" >
+          <img src={playbutton}></img>
+        </Button>
+        <Button onClick={togglePlay} isPlaying={isPlaying} className="btn_play_circle_purple" >
+          <img src={stopbutton}></img>
+        </Button>
+        {playHeadComponent}
+
       </div>
+
+      <div className="musicplay">{playHeadComponent}</div>
       <br />
       <div className="volTempo">
-        <div className="volStyle">
+   
+
+        
+        <div id="a">
     
-        </div>
-        <div className="tempoStyle">
-          <Tempo
+
+
+
+
+{/* <SwatchesPicker color={selectedColor} onChangeComplete={changeColor} />  */}
+
+<Tempo
             value={tempo}
             onTempoChange={(event) => {
               handleTempoChange(event);
             }}
           />
-        </div>
-        <div id="a">
-    
-
-{/* <SwatchesPicker color={selectedColor} onChangeComplete={changeColor} />  */}
+          
 <ColorPicker  color={selectedColor} onChangeComplete={changeColor} onSetColor={setColor} />
 
 </div></div>
       <br />
-      <table border="0">
+      <table border="2">
         <tbody id="table"  ref={panelRef}>
-          {playHeadComponent}
+         
           {instrumentRows}
          
         </tbody>

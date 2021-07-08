@@ -1,48 +1,48 @@
 import React from "react";
 import {Link,withRouter} from "react-router-dom";
 import styled from "styled-components";
-
+import '../styles/home.css';
+import logo from "../img/logo.png"
 const Header = styled.header`
-    color:white;
+    
 
 
     width:100%;
     height:50px;
     display:flex;
-    align-items:center;
+
     
-    background-color: rgba(155, 91, 166, 0.43);
+    background-color: #f5f7fa;
     padding : 0px 10px;
 
-    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.8);
+
 
 `;
 const List = styled.ul`
   display: flex;`;
 
 const Item = styled.li`
-  width: 80px;
-  height: 50px;
-  text-align: center;
+
+
   border-bottom: 5px solid 
   ${props => props.current ? "#3498db":"transparent"};
   transition:border-bottom .5s ease-in-out;
 `;
 
 const SLink = styled(Link)`
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 `;
+
+
 export default withRouter(({location:{pathname}})=>(
     <Header>
-    <List>
-    <Item current={pathname === "/"}><SLink to="/">Movies</SLink></Item>
-    <Item current={pathname === "/maker"}><SLink to="/maker">Maker</SLink></Item>
-    <Item current={pathname === "/collection"}><SLink to="/collection">My Collection</SLink></Item>
+    <List className="gnb_bg">
+    <img src={logo} className="logo"/>
+    <Item current={pathname === "/"}><SLink to="/" className="Drawing">Main</SLink></Item>
+    <Item current={pathname === "/maker"}><SLink to="/maker" className="Drawing" >Drawing</SLink></Item>
+    <Item current={pathname === "/collection"}><SLink to="/collection" className="collection1" >collection</SLink></Item>
 
-    <Item current={pathname === "/collection2"}><SLink to="/collection2">collection2</SLink></Item>
+    <Item current={pathname === "/collection2"}><SLink to="/collection2" className="collection2">collection2</SLink></Item>
     
     </List>
     </Header>));

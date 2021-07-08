@@ -9,7 +9,7 @@ import Header from "./Header";
 export default ()=>(
     <Router>
        <>
-      <Header/>
+      {/* <Header/> */}
       <Menubar />
       <Switch>
         <Route path="/" exact component={Home} />

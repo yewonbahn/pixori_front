@@ -1,0 +1,234 @@
+.gnb_bg1 {
+
+  width: 1920px;
+  height: 112px;
+  flex-grow: 0;
+  padding: 40px 330px 38px 72px;
+  background-color: #f5f7fa;
+  
+}
+
+.gnb_bg {
+  
+    width: 1920px;
+    height: 150px;
+    flex-grow: 0;
+    padding: 40px 330px 38px 72px;
+    background-color: #f5f7fa;
+    
+  }
+  
+  .logo {
+    width: 108px;
+    height: 28px;
+    margin: 6px 107px 0 162px;
+    padding: 0 0 0px;
+
+
+  }
+  .Vector {
+    
+    width: 20.4px;
+    height: 28.4px;
+    flex-grow: 0;
+    margin: 5.6px 2.9px 0px 161.6px;
+    background-color: #846cff;
+
+  }
+  .Vector1 {
+    width: 8.2px;
+    height: 20.3px;
+    flex-grow: 0;
+    margin: 5.3px 2.9px 8.5px 2.9px;
+    background-color: #846cff;
+
+
+  }
+  .Frame-1 {
+    width: 252px;
+    height: 32px;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 71px 373px 0 97.8px;
+    padding: 4px 10px 1px;
+    background-color: #846cff;
+  }
+  .What-is-Pixori {
+
+      width: 221px;
+      height: 36px;
+      flex-grow: 0;
+      font-family: SpaceMono;
+      font-size: 24px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+    }
+    .Create-your-own-NFTs {
+        width: 232px;
+        height: 27px;
+        flex-grow: 0;
+        font-family: SpaceMono;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+      }
+    .Vector4 {
+        width: 16.3px;
+        height: 20.3px;
+        flex-grow: 0;
+        margin: 5.6px 2.9px 8.1px 2.9px;
+        background-color: #846cff;
+
+    }
+    .font {
+        width: 724px;
+        height: 207px;
+        flex-grow: 0;
+        margin: 16px 315px 42px 0;
+        font-family: SpaceMono;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        
+    }
+    .Vector5{
+        width: 8.2px;
+        height: 20.3px;
+        flex-grow: 0;
+        margin: 5.2px 107px 8.5px 2.9px;
+        background-color: #846cff;
+        
+    }
+    
+    .Rectangle-491 {
+    display: inline-block;
+        flex-grow: 0;
+        width: 1920px;
+        height: 504px;
+        flex-grow: 0;
+        margin: 112px 0 564px;
+        padding: 60px 292px 54px 329px;
+        background-image: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0)), linear-gradient(to bottom, #846cff, #846cff);
+    }
+    .grid {
+   
+    
+        width: 1920px;
+        height: 568.5px;
+        margin: 500px 0 175.5px;
+        padding: 80px 375px 152.5px 386px;
+        background-image: linear-gradient(to top, #70f6f3, #846cff);
+      }
+      .Frame-5 {
+        width: 241px;
+        height: 41px;
+        flex-grow: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 0 378px 34px 103.8px;
+        padding: 4px 10px 1px;
+        background-color: #846cff;
+      }
+  .Drawing {
+    width: 105px;
+    height: 26px;
+    flex-grow: 0;
+    margin: 6px 44px 2px 107px;
+    font-family: SpaceMono;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(132, 108, 255, 0.7);
+  }
+  .img_pixelart_bird {
+      display: bl;
+    width: 260px;
+    height: 390px;
+    margin: 0 0 0 315px;
+
+  }
+  .Rectangle-462 {
+
+    width: 178px;
+    height: 32px;
+    margin: 42px 860px 93px 1px;
+    padding: 1px 13px 8px;
+    background-color: #70f6f3;
+  }
+  .img_pixelart_cherry {
+    width: 165px;
+    height: 174px;
+    margin: 71px 52px 18px 0;
+    object-fit: contain;
+  }
+  .LETS-Start {
+    width: 152px;
+    height: 23px;
+    font-family: SpaceMono;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #846cff;
+
+  }
+  .collection1 {
+    width: 140px;
+    height: 26px;
+    flex-grow: 0;
+    margin: 6px 43px 2px 44px;
+    font-family: SpaceMono;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(132, 108, 255, 0.7);
+  }
+
+  .collection2 {
+    width: 119px;
+    height: 26px;
+    flex-grow: 0;
+    margin: 6px 322px 2px 43px;
+    font-family: SpaceMono;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(132, 108, 255, 0.7);
+  }
