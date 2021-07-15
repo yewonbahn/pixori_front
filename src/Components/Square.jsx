@@ -63,7 +63,7 @@ const Square = (props) => {
     <React.Fragment>
 
     <td className="tCell"
-      style={toggle ? { background: pixelColor, padding: '15px' } : { background: '#fffff7', padding: '15px' }}
+      style={toggle ? {  background: pixelColor, padding: '15px' } : {  border: '0.01px solid rgba(132, 108, 255, 0.5)', background: '#fffff7', padding: '15px' }}
     
       onClick={() =>{ handleClick();}}
 

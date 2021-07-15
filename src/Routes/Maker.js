@@ -29,6 +29,7 @@ import ColorPicker from '../Components/ColorPicker.js';
 import {MintCluster} from '../clusters/mint-cluster'
 import playbutton from "../img/btn_play_circle_purple.png"
 import stopbutton from "../img/btn_stop_circle_purple.png"
+import bpmbutton from "../img/btn_tempo_circle_purple.png"
 const arr1= Array.from(Array(16), () => new Array(32).fill(0));
 
 const Home = () => {
@@ -336,36 +337,33 @@ const Home = () => {
         <Button onClick={togglePlay} isPlaying={isPlaying} className="btn_play_circle_purple" >
           <img src={stopbutton}></img>
         </Button>
-        {playHeadComponent}
 
-      </div>
-
-      <div className="musicplay">{playHeadComponent}</div>
-      <br />
-      <div className="volTempo">
-   
-
-        
-        <div id="a">
     
-
-
-
-
-{/* <SwatchesPicker color={selectedColor} onChangeComplete={changeColor} />  */}
-
-<Tempo
-            value={tempo}
-            onTempoChange={(event) => {
-              handleTempoChange(event);
-            }}
-          />
-          
-<ColorPicker  color={selectedColor} onChangeComplete={changeColor} onSetColor={setColor} />
-
-</div></div>
+      
+      
+      </div>
+      <div className="musicplay">{playHeadComponent}</div>
+   <div className="mint">
+    <Button
+    style={{ background: "ffffff", padding: '27px' }}
+    
+    onClick={() =>{ handleClick();}}>Mint!
+      </Button>
+    </div>
       <br />
-      <table border="2">
+ 
+  
+<div className="volTempo">
+<Tempo   value={tempo} onTempoChange={(event) => { handleTempoChange(event); }} >
+  <img className="volTempo2" src={bpmbutton}></img>
+</Tempo>
+</div>
+<div className="colorpick">
+<ColorPicker id="colorpicker"  color={selectedColor} onChangeComplete={changeColor} onSetColor={setColor} />
+</div>
+
+      <br />
+      <table  border="2" className="tabledgn">
         <tbody id="table"  ref={panelRef}>
          
           {instrumentRows}

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import '../styles/index.css';
-
+import bpmbutton from "../img/btn_tempo_circle_purple.png"
 const Tempo = (props) => {
 
   return (
     <div>
-      <label className="temStyle">Tem<span className="poStyle">po</span></label>
+      <img src={bpmbutton}></img>
       <input
         className="tempoBorder"
         label='Tempo'

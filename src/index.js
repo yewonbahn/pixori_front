@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import './styles/home.css'
 import App from './Components/App';
 
 import "./config"
@@ -29,7 +29,7 @@ function Profile() {
 ReactDOM.render(
   <React.StrictMode>
     <RecoilRoot>
-      <AuthCluster />
+      <AuthCluster className="auth"/>
       <CurrentUserSubscription />
       <Init />
       <Profile />

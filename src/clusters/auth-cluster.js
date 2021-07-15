@@ -2,7 +2,7 @@
 
 import React, {useState, useEffect} from "react"
 import {useCurrentUser} from "../hooks/current-user"
-
+import '../styles/home.css';
 function WithAuth() {
   const cu = useCurrentUser()
 
@@ -18,7 +18,7 @@ function SansAuth() {
   const cu = useCurrentUser()
 
   return cu.loggedIn ? null : (
-    <div>
+    <div className="login">
       <button onClick={cu.logIn}>Log In</button>
       <button onClick={cu.signUp}>Sign Up</button>
     </div>
