@@ -177,14 +177,7 @@
     margin: 0 0 0 315px;
 
   }
-  .Rectangle-462 {
-
-    width: 178px;
-    height: 32px;
-    margin: 42px 860px 93px 1px;
-    padding: 1px 13px 8px;
-    background-color: #70f6f3;
-  }
+  
   .img_pixelart_cherry {
     width: 165px;
     height: 174px;
@@ -237,9 +230,70 @@
     color: rgba(132, 108, 255, 0.7);
   }   
   
+
+
+
   .login{
     position: relative;
-    left: 1500px;
+    left: 1200px;
     top: 100px;
-      
+    width: 185px;
+    height: 55px;
+    flex-grow: 0;
+    margin: 0 32px 0 184px;
+    padding: 5px 25px 17px 33px;
+    border: solid 1px #846cff;
+    background-color: #f5f7fa;
+    font-family: SpaceMono;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #846cff;
+  }
+
+
+  .Signrectangle{
+    flex-grow: 0;
+    font-family: SpaceMono;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    left: 1200px;
+    top: 100px;
+    width: 185px;
+    height: 55px;
+    flex-grow: 0;
+    margin: 0 0 0 32px;
+    padding: 12px 9px 16px;
+    border: solid 1px #846cff;
+    background-color: #846cff;
+  }
+  .Rectangle-492 {
+    width: 256px;
+    height: 43px;
+    margin: 91px 470px 0;
+    padding: 1.3px 18.7px 10.8px 18.7px;
+    border: solid 1px #846cff;
+    background-color: #70f6f3;
+    position: relative;
+ 
+    font-family: SpaceMono;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #846cff;
   }

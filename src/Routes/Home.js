@@ -12,6 +12,7 @@ function Maker() {
 via easy, hands-on experiments. 
 
 </div>
+<div className="Rectangle-492"> LET’S Start</div>
 
 
     </div>
