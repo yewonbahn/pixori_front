@@ -1,10 +1,11 @@
 import React, { Fragment } from 'react'
 import '../styles/home.css'
 import Bird from "../img/img_pixelart_bird.png"
-import Cherry from "../img/img_pixelart_cherry.png"
+import Cherry from "../img/Vector@3x.png"
+import Footer from "../Components/Footer.js"
 function Maker() {
     return (
-        <div>
+        <Fragment>
         <div 
         className="Rectangle-491"
         >
@@ -16,16 +17,21 @@ via easy, hands-on experiments.
 
 
     </div>
-    <div className="grid">
-            <div className="Frame-5">
-        <div className="What-is-Pixori">What is Pixori?</div></div>
-        <img src={Cherry} className="img_pixelart_cherry"/>
-        <div className="Frame-1">
-        <div className="Create-your-own-NFTs">Create your own NFTs</div></div>
-        
-        </div>
-        </div>
 
+
+
+    <div className="What-is-Pixori">What is Pixori?</div>
+
+
+    <div >
+    <img src={Cherry} className="grid"/>
+        <div className="Frame-1">Create your own NFTs</div>
+      
+    </div>
+        
+    
+     <Footer/>
+     </Fragment>
 
 
 

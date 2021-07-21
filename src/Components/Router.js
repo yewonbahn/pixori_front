@@ -5,11 +5,11 @@ import Collection from "../Routes/Collection"
 import Collection2 from "../Routes/Collection2"
 import Maker from "../Routes/Maker";
 import Menubar from "./Menubar";
-import Header from "./Header";
+import Footer from "./Footer";
 export default ()=>(
     <Router>
        <>
-      {/* <Header/> */}
+
       <Menubar />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -17,6 +17,7 @@ export default ()=>(
         <Route path="/collection" component={Collection} />
         <Route path="/collection2" component={Collection2} />
         <Redirect from="*" to="/" />
+        <Footer/>
       </Switch>
     </>
     </Router>

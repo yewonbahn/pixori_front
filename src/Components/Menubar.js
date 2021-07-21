@@ -24,9 +24,8 @@ const List = styled.ul`
 const Item = styled.li`
 
 
-  border-bottom: 5px solid 
-  ${props => props.current ? "#3498db":"transparent"};
-  transition:border-bottom .5s ease-in-out;
+ 
+  
 `;
 
 const SLink = styled(Link)`
@@ -37,7 +36,8 @@ const SLink = styled(Link)`
 export default withRouter(({location:{pathname}})=>(
     <Header>
     <List className="gnb_bg">
-    <img src={logo} className="logo"/>
+    <Item current={pathname === "/"}><SLink to="/" className="Drawing"><img src={logo} className="logo"/></SLink></Item>
+
     <Item current={pathname === "/"}><SLink to="/" className="Drawing">Main</SLink></Item>
     <Item current={pathname === "/maker"}><SLink to="/maker" className="Drawing" >Drawing</SLink></Item>
     <Item current={pathname === "/collection"}><SLink to="/collection" className="collection1" >collection</SLink></Item>

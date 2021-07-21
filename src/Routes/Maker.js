@@ -17,7 +17,7 @@ import '../styles/playhead.css';
 import BeatMachine from '../Components/BeatMachine';
 import InstrumentRow from '../Components/InstrumentRow';
 import Bpm from '../helpers/useBPM';
-
+import Modal from '../Components/Modal';
 import Tempo from '../Components/Tempo';
 import { instruments } from '../helpers/instruments';
 
@@ -36,6 +36,14 @@ const Home = () => {
 
 
 
+  const [ modalOpen, setModalOpen ] = useState(false);
+
+  const openModal = () => {
+      setModalOpen(true);
+  }
+  const closeModal = () => {
+      setModalOpen(false);
+  }
 
 
   const myPortalContainer = document.getElementById("portal");
@@ -293,18 +301,9 @@ const Home = () => {
   };
   const handleClick = () => {
     
-    console.log(arr1)
-    alert('Creating NFT!')
+  
     
-    html2canvas(document.getElementById("table"), {
-      onrendered: function (canvas) {
-       const a= canvas.toDataURL();
-       console.log(a);
-
-      },
-      width:320,
-      height:220
-  });
+  
   }
   
   const colorArray = arr1.toString();
@@ -346,10 +345,13 @@ const Home = () => {
    <div className="mint">
     <Button
     style={{ background: "ffffff", padding: '27px' }}
-    
-    onClick={() =>{ handleClick();}}>Mint!
+  onClick={openModal}>Mint!
       </Button>
-    </div>
+     
+      <Modal open={ modalOpen } close={ closeModal } header="Modal heading">
+      </Modal>
+      </div>
+   
       <br />
  
   
