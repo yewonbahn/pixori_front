@@ -82,3 +82,60 @@
         opacity: 1;
     }
 }
+.input {
+
+
+   width: 119px;
+    height: 53px;
+  flex-grow: 0;
+  margin: 34px 8px 12px 27px;
+  padding: 1px 0px 8px 6.9px;
+  font-family: SpaceMono;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #846cff;
+    display: table-cell;
+    vertical-align: middle;
+    border: solid 1px #846cff;
+    background-color: #f5f7fa;
+  }
+  
+  
+  .input2 {
+    position:relative;
+    top:-74px;
+    left:110px;
+    width: 300px;
+    height: 53px;
+    flex-grow: 0;
+    margin: 21px 12px 15px 0;
+    padding: 14px 23px 5px 8px;
+    border: solid 1px #846cff;
+    background-color: #f5f7fa;
+  }
+
+  .Rectangle-460 {
+    width: 115.3px;
+    height: 31.1px;
+    flex-grow: 0;
+
+    background-color: #70f6f3;
+
+
+        margin: 0 10.9px 8.7px 13.9px;
+        font-family: SpaceMono;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #846cff;
+      
+  }

@@ -35,6 +35,7 @@ const arr1= Array.from(Array(16), () => new Array(32).fill(0));
 const Home = () => {
 
 
+  
 
   const [ modalOpen, setModalOpen ] = useState(false);
 
@@ -59,9 +60,9 @@ const Home = () => {
 
 
 
-  function changeColor(color) {
-    setColor(color.hex);
-  }
+  // function changeColor(color) {
+  //   setColor(color.hex);
+  // }
   //beat machine initial states
   const [isPlaying, setIsPlaying] = useState(false);
   const [tempo, setTempo] = useState(120);
@@ -301,7 +302,24 @@ const Home = () => {
   };
   const handleClick = () => {
     
-  
+    setGrid = [
+      instruments[0].pattern,
+      instruments[1].pattern,
+      instruments[2].pattern,
+      instruments[3].pattern,
+      instruments[4].pattern,
+      instruments[5].pattern,
+      instruments[6].pattern,
+      instruments[7].pattern,
+      instruments[8].pattern,
+      instruments[9].pattern,
+      instruments[10].pattern,
+      instruments[11].pattern,
+      instruments[12].pattern,
+      instruments[13].pattern,    
+      instruments[14].pattern,
+      instruments[15].pattern,
+    ];
     
   
   }
@@ -348,7 +366,7 @@ const Home = () => {
   onClick={openModal}>Mint!
       </Button>
      
-      <Modal open={ modalOpen } close={ closeModal } header="Modal heading">
+      <Modal open={ modalOpen } close={ closeModal } header="" arr={arr1}>
       </Modal>
       </div>
    
@@ -356,12 +374,16 @@ const Home = () => {
  
   
 <div className="volTempo">
+
+<button onClick="window.location.reload()">새로고침</button>
 <Tempo   value={tempo} onTempoChange={(event) => { handleTempoChange(event); }} >
   <img className="volTempo2" src={bpmbutton}></img>
 </Tempo>
 </div>
 <div className="colorpick">
-<ColorPicker id="colorpicker"  color={selectedColor} onChangeComplete={changeColor} onSetColor={setColor} />
+<ColorPicker color={selectedColor} 
+// onChangeComplete={changeColor} 
+onSetColor={setColor} />
 </div>
 
       <br />
@@ -387,9 +409,9 @@ const Home = () => {
       <button onClick={set}>set Name</button>
     </div>
 
-    <div>
+    {/* <div>
     <MintCluster name={nftName} array={colorArray} />
-    </div>
+    </div> */}
 
     </div>
     </Fragment>

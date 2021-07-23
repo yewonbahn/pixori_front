@@ -10,7 +10,18 @@ function Footer (){
   return (
 
 
-    <div className="Rectangle-467">이곳은 메뉴바 입니다.</div>
+    <div className="Rectangle-467">
+  <div className ="Customer-services">Customer services</div>
+  <div className ="Follow-us">Follow us</div>
+
+
+
+
+
+
+
+
+    </div>
   )
   
 }

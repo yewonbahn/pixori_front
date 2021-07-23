@@ -7,7 +7,8 @@ export default createUseStyles({
     width: '50px',
     height: '50px',
     outline: 'none',
-    border: 'none',
+    borderRadius: "50",
     cursor: 'pointer',
   },
+  
 });

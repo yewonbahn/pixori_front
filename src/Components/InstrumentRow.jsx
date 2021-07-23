@@ -15,6 +15,7 @@ const InstrumentRow = (props) => {
         {props.instrumentName}
       </td>
       {squares}
+  
     </tr>
 
 

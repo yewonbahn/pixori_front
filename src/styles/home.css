@@ -302,3 +302,35 @@
     padding: 24px 805px 0 329px;
     background-color: #f5f7fa;
   }
+  
+  .Customer-services {
+    width: 135px;
+    height: 19px;
+    margin: 0 18.5px 17px 0;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #846cff;
+  }
+  .Follow-us {
+    position: relative;
+    left: 700px;
+    top: -40px;
+    width: 69px;
+    height: 19px;
+    margin: 0 39px 17px 190px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #846cff;
+  }
